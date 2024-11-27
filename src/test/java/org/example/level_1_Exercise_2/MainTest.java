@@ -26,7 +26,7 @@ public class MainTest {
             "77777777, B",
             "88888888, Y"
     })
-    void testCalculoDni(int numeroDni, char lletraEsperada) {
-        assertEquals(lletraEsperada, calculationDNI.calculationLetter(numeroDni));
+    void testCalculoDni(int numberDNI, char expectedLetter) {
+        assertEquals(expectedLetter, calculationDNI.calculationLetter(numberDNI));
     }
 }
