@@ -9,7 +9,15 @@ public class BookManagement {
     }
 
     public void addBook(Book book){
-        this.books.add(book);
+        boolean existBook=false;
+        for (Book readArrayBooks : this.books) {
+            if(book.getTitle().equalsIgnoreCase(readArrayBooks.getTitle())){
+                existBook=true;
+            }
+        }
+        if(existBook==false){
+            this.books.add(book);
+        }
     }
 
     public ArrayList<Book> getBooks() {
