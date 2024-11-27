@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Level_1_Exercise_1.Modules;
 
 import java.util.ArrayList;
 
