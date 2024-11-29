@@ -9,7 +9,7 @@ public class ArrayHandler {
 
     public int getElementAt(int index) {
         if (index < 0 || index >= numbers.length) {
-            throw new ArrayIndexOutOfBoundsException("Índex fora de rang: " + index);
+            throw new ArrayIndexOutOfBoundsException("Index out of range: " + index);
         }
         return numbers[index];
     }
